@@ -12,6 +12,10 @@ BOT_NAME = 'mySpider'
 SPIDER_MODULES = ['mySpider.spiders']
 NEWSPIDER_MODULE = 'mySpider.spiders'
 
+# 定义输出日志级别，只输出WARNING以上（包括）级别的日志
+LOG_LEVEL = 'WARNING'
+# 保存日志到本地（当前目录）
+LOG_FILE = './log.log'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'mySpider (+http://www.yourdomain.com)'
@@ -62,9 +66,11 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'mySpider.pipelines.MyspiderPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'mySpider.pipelines.MyspiderPipeline': 300,
+    # 前面代表该pipeline的路径；300数值代表优先级，可以有很多pipeline，数值越小，优先级越高，优先级高的先处理
+    # 'mySpider.pipelines.MyspiderPipeline1': 500,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -10,4 +10,10 @@ from itemadapter import ItemAdapter
 
 class MyspiderPipeline:
     def process_item(self, item, spider):
+        print(item)
         return item
+
+# class MyspiderPipeline1:
+#     def process_item(self, item, spider):
+#         item["hello"] = "world"
+#         return item
