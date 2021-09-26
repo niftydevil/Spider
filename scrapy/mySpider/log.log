@@ -18,3 +18,15 @@
 2021-08-25 19:49:29 [mySpider.spiders.itcast] WARNING: {'i': 7}
 2021-08-25 19:49:29 [mySpider.spiders.itcast] WARNING: {'i': 8}
 2021-08-25 19:49:29 [mySpider.spiders.itcast] WARNING: {'i': 9}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 0}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 1}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 2}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 3}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 4}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 5}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 6}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 7}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 8}
+2021-08-26 16:21:49 [mySpider.spiders.itcast] WARNING: {'i': 9}
+Thu, 26 Aug 2021 17:39:30 log.py[line:14] INFO 1111111111111
+Thu, 26 Aug 2021 17:39:30 log.py[line:15] WARNING 22222222222

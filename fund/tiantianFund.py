@@ -9,13 +9,11 @@ from openpyxl import Workbook
 from datetime import datetime
 
 
-
-
 def main():
     # url = "http://fund.eastmoney.com/daogou"
     # 连接中，通过"pi数字"跳转到第几页
     # url = "https://fund.eastmoney.com/daogou/#dt4;ft;rs;sd;ed;pr;cp;rt;tp;rk;se;nx;sc3y;stdesc;pi1;pn20;zfdiy;shlist"
-    for i in range(1, 3):
+    for i in range(1, 4):
         url = "https://fund.eastmoney.com/daogou/#dt4;ft;rs;sd;ed;pr;cp;rt;tp;rk;se;nx;sc3y;stdesc;pi" \
               + str(i) + ";pn20;zfdiy;shlist"
         # response = requests.get(url)
@@ -142,7 +140,7 @@ def main():
                 host='127.0.0.1',
                 port=3306,
                 user='root',
-                password='root',
+                password='',
                 database='test'
             )
             # 建立游标，获取会话指针
@@ -193,7 +191,7 @@ def main():
                 "fund_rate": fund_rate,
                 "fund_min_purchase_money": fund_min_purchase_money
             }
-            # collection_name.insert_one(info)
+            collection_name.insert_one(info)
 
 
 if __name__ == '__main__':
