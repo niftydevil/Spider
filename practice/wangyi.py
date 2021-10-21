@@ -1,3 +1,6 @@
+# 1. 找到未加密的参数
+# 2. 想办法把参数加密（加密必须参考网易的加密逻辑） params   encSecKey
+# 3. 请求网易，拿到评论数据
 import requests
 
 url = "https://music.163.com/weapi/comment/resource/comments/get?csrf_token="
@@ -18,6 +21,26 @@ headers = {
               "6f46798939ed8f87a8eb8fba6e9668c8ea796f93bae9ebcb6e1648388969be237e2a3; WM_TID=fXRuavUl4dFEUFFURQdrpThgP"
               "rRHEDmO "
 }
+data = {
+    "csrf_token": "",
+    "cursor": "-1",
+    "offset": "0",
+    "orderType": "1",
+    "pageNo": "1",
+    "pageSize": "20",
+    "rid": "R_SO_4_1325905146",
+    "threadId": "R_SO_4_1325905146"
+}
 
 response = requests.post(url, headers=headers)
 print(response.text)
+
+# 加密
+"""
+Di = function Di() {
+        for (var t = "", i = 1; i <= 32; i++)
+            t += Math.floor(16 * Math.random()).toString(16),
+            8 !== i && 12 !== i && 16 !== i && 20 !== i || (t += "-");
+        return t
+    }
+"""
